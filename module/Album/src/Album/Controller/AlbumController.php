@@ -24,8 +24,8 @@ class AlbumController extends AbstractActionController
         $album2->artist = "Kettcar";
         
         return new ViewModel(array(
-            #'albums' => $this->getAlbumTable()->fetchAll(),
-            'albums' => array($album1, $album2)
+            'albums' => $this->getAlbumTable()->fetchAll(),
+            #'albums' => array($album1, $album2)
         ));
     }
 
