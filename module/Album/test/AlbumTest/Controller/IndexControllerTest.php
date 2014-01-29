@@ -16,6 +16,18 @@ class AlbumControllerTest extends AbstractHttpControllerTestCase
     
     public function testIndexActionCanBeAccessed()
     {
+        $albumTableMock = $this->getMockBuilder('Album\Model\AlbumTable')
+            ->disableOriginalConstructor()
+            ->getMock();
+        
+        $albumTableMock->expects($this->once())
+            ->method('fetchAll')
+            ->will($this->returnValue(array()));
+        
+        $serviceManager = $this->getApplicationServiceLocator();
+        $serviceManager->setAllowOverride(true);
+        $serviceManager->setService('Album\Model\AlbumTable', $albumTableMock);
+        
         $this->dispatch('/album');
         $this->assertResponseStatusCode(200);
     

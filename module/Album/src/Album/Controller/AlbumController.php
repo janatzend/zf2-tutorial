@@ -13,19 +13,8 @@ class AlbumController extends AbstractActionController
 
     public function indexAction()
     {
-        $album1 = new \stdClass();
-        $album1->id = 1;
-        $album1->title = "#2";
-        $album1->artist = "Thees Uhlmann";
-        
-        $album2 = new \stdClass();
-        $album2->id = 2;
-        $album2->title = "Zwischen den Runden";
-        $album2->artist = "Kettcar";
-        
         return new ViewModel(array(
             'albums' => $this->getAlbumTable()->fetchAll(),
-            #'albums' => array($album1, $album2)
         ));
     }
 
