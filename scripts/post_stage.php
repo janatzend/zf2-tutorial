@@ -30,4 +30,4 @@
  */  
 
 echo "Manual Termination of Deployment process";
-exit(0);
+exit(1);
