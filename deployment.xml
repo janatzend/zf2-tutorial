@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><package xmlns="http://www.zend.com/server/deployment-descriptor/1.0" version="1.0">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<package xmlns="http://www.zend.com/server/deployment-descriptor/1.0" version="1.0">
     <name>zf2-tutorial</name>
     <version>
-        <release>1.0.0</release>
+        <release>36.d6c354444620a9e6e6671dc1b345f4fc570a30c8</release>
     </version>
     <appdir>data</appdir>
     <docroot>data/public</docroot>
