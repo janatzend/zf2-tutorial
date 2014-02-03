@@ -30,5 +30,5 @@
  */  
 
 echo "Manual Termination of Deployment process";
-sleep(1);
+sleep(7);
 exit(0);
