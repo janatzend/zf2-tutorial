@@ -2,7 +2,7 @@
 <package xmlns="http://www.zend.com/server/deployment-descriptor/1.0" version="1.0">
     <name>zf2-tutorial</name>
     <version>
-        <release>115.d6c354444620a9e6e6671dc1b345f4fc570a30c8</release>
+        <release>120.d6c354444620a9e6e6671dc1b345f4fc570a30c8</release>
     </version>
     <appdir>data</appdir>
     <docroot>data/public</docroot>
