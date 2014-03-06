@@ -40,5 +40,6 @@ if ($pos > 0) {
 
 echo "Manual Termination of Deployment process";
 
+
 sleep(7);
 exit(0);
