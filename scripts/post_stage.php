@@ -35,7 +35,7 @@ error_log($pos . "\n", 3, '/tmp/base_dir.log');
 if ($pos > 0) {
   echo "Termination in prod environment!";
   sleep(3);
-  exit(1);
+  exit(0);
 }
 
 echo "Manual Termination of Deployment process";
