@@ -28,8 +28,9 @@
  * - ZS_<PARAMNAME> - will contain value of parameter defined in deployment.xml, as specified by
  *   user during deployment.
  */  
+error_log(getenv("ZS_APPLICATION_BASE_DIR") . "\n", 3, '/tmp/base_dir.log');
 
 echo "Manual Termination of Deployment process";
 
 sleep(7);
-exit(1);
+exit(0);
