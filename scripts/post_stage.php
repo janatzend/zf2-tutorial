@@ -29,8 +29,16 @@
  *   user during deployment.
  */  
 error_log(getenv("ZS_APPLICATION_BASE_DIR") . "\n", 3, '/tmp/base_dir.log');
+$pos = strpos(getenv("ZS_APPLICATION_BASE_DIR"), 'myappprod');
+error_log($pos . "\n", 3, '/tmp/base_dir.log');
+
+if ($pos > 0) {
+  echo "Termination in prod environment!";
+  sleep(3);
+  exit(1);
+}
 
 echo "Manual Termination of Deployment process";
 
-sleep(7);
+sleep(3);
 exit(0);
