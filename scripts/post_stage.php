@@ -32,6 +32,14 @@ error_log(getenv("ZS_APPLICATION_BASE_DIR") . "\n", 3, '/tmp/base_dir.log');
 $pos = strpos(getenv("ZS_APPLICATION_BASE_DIR"), 'myappprod');
 error_log($pos . "\n", 3, '/tmp/base_dir.log');
 
+$param1 = getenv('ZS_PARAM1');
+$param1 = getenv('ZS_PARAM2');
+$param1 = getenv('ZS_PARAM3');
+
+error_log("ZS_PARAM1: $param1\n", 3, '/tmp/params.log');
+error_log("ZS_PARAM2: $param2\n", 3, '/tmp/params.log');
+error_log("ZS_PARAM3: $param3\n", 3, '/tmp/params.log');
+
 if ($pos > 0) {
   echo "Termination in prod environment!";
   sleep(3);
