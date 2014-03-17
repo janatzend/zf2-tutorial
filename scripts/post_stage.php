@@ -43,7 +43,7 @@ error_log("ZS_PARAM3: $param3\n", 3, '/tmp/params.log');
 if ($pos > 0) {
   echo "Termination in prod environment!";
   sleep(3);
-  exit(0);
+  exit(1);
 }
 
 echo "Manual Termination of Deployment process";
