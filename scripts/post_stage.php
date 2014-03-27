@@ -50,5 +50,5 @@ echo "Manual Termination of Deployment process";
 
 
 sleep(7);
-exit(0);
+exit(1);
 
