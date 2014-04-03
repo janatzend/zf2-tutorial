@@ -7,4 +7,11 @@
     <appdir>data</appdir>
     <docroot>data/public</docroot>
     <scriptsdir>scripts</scriptsdir>
+    <dependencies>
+    <required>
+      <library>
+        <name>mylib</name>
+      </library>
+    </required>
+  </dependencies>
 </package>
