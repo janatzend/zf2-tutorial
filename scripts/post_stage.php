@@ -28,27 +28,16 @@
  * - ZS_<PARAMNAME> - will contain value of parameter defined in deployment.xml, as specified by
  *   user during deployment.
  */  
-error_log(getenv("ZS_APPLICATION_BASE_DIR") . "\n", 3, '/tmp/base_dir.log');
-$pos = strpos(getenv("ZS_APPLICATION_BASE_DIR"), 'myappprod');
-error_log($pos . "\n", 3, '/tmp/base_dir.log');
-
-$param1 = getenv('ZS_PARAM1');
-$param2 = getenv('ZS_PARAM2');
-$param3 = getenv('ZS_PARAM3');
-
-error_log("ZS_PARAM1: $param1\n", 3, '/tmp/params.log');
-error_log("ZS_PARAM2: $param2\n", 3, '/tmp/params.log');
-error_log("ZS_PARAM3: $param3\n", 3, '/tmp/params.log');
+$pos = strpos(getenv("ZS_APPLICATION_BASE_DIR"), 'STAGING');
 
 if ($pos > 0) {
-  echo "Termination in prod environment!";
+  echo "Termination in STAGING environment!";
   sleep(3);
-  exit(0);
+  exit(1);
 }
 
 echo "Manual Termination of Deployment process";
 
-
 sleep(7);
-exit(0);
+exit(1);
 
