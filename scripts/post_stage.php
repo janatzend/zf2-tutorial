@@ -33,7 +33,7 @@ $pos = strpos(getenv("ZS_APPLICATION_BASE_DIR"), 'STAGING');
 if ($pos > 0) {
   echo "Termination in STAGING environment!";
   sleep(3);
-  exit(1);
+  exit(0);
 }
 
 echo "Manual Termination of Deployment process";
