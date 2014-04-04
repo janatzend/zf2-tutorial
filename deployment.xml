@@ -10,7 +10,7 @@
     <dependencies>
     <required>
       <library>
-        <name>mylib</name>
+        <name>Zend Framework 2</name>
       </library>
     </required>
   </dependencies>
