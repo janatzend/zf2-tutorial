@@ -10,7 +10,7 @@
     <dependencies>
     <required>
       <library>
-        <name>mylib</name>
+        <name>mylib2</name>
       </library>
     </required>
   </dependencies>
