@@ -28,16 +28,16 @@
  * - ZS_<PARAMNAME> - will contain value of parameter defined in deployment.xml, as specified by
  *   user during deployment.
  */  
-$pos = strpos(getenv("ZS_APPLICATION_BASE_DIR"), 'STAGING');
+$pos = strpos(getenv("ZS_APPLICATION_BASE_DIR"), 'qa');
 
 if ($pos > 0) {
-  echo "Termination in STAGING environment!";
+  echo "Termination in QA environment!";
   sleep(3);
-  exit(0);
+  exit(1);
 }
 
 echo "Manual Termination of Deployment process";
 
 sleep(7);
-exit(0);
+exit(1);
 
